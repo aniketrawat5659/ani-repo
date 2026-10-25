@@ -56,7 +56,7 @@ resource "aws_route_table_association" "public-subk" {
 
 resource "aws_instance" "my_server" {
   ami           = "ami-00d8aa800578d8b12"   
-  instance_type = "t3.micro"
+  instance_type = "t2.micro"
 subnet_id = aws_subnet.Public-subnet.id
   tags = {
     Name        = "MyServerName12"  
